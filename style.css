@@ -1,0 +1,159 @@
+/*====Google Font Import - poppins===*/
+@import url('https://fonts.cdnfonts.com/css/poppins');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+min-height: 100vh;
+background: #33137f;
+}
+.h1 {
+    color: #FF0000;
+}
+.container{
+    width: 246px;
+    overflow: hidden;
+    display:flex 
+  }
+.container .text{
+      position: relative; 
+      color: #4070f4;
+      font-weight: 600;
+  }
+  .container .text.first-text{
+      color: #fff;
+  }
+  .text.sec-text::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #010718;
+        border-left: 2px solid #FF0000;
+        animation: animate 4s steps(12)infinite;
+  
+  }
+  @keyframes animate{
+      40%, 60%{
+          left: calc(100% + 4px);
+      }
+      100%{
+          left: 0%;
+      }
+  }
+
+
+
+.container
+{
+    position: relative;
+    margin-left: 45.1%;
+} 
+
+
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 50px 0%;
+    background: #333;
+    color: #060101;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+
+.col-2{
+    flex-grow: 1;
+}
+.col-3{
+    position: relative;
+}
+.footer div h3{
+    font-weight: 2000;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.footer div h4{
+    display: inline-flex;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+form input{
+    width: 400px;
+    height: 45px; 
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.social-icons{
+    margin-top: 30px;
+    
+}
+.social-icons i{
+    font-size: 22px;
+    margin: 10px;
+}
+.bubbles
+{
+   position: relative; 
+   display: flex;
+}
+.bubbles span
+{
+  position: relative;
+  width: 30px; 
+  height: 30px; 
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44,
+  0 0 50px #4fc3dc,
+  0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+  
+}
+ .bubbles span:nth-child(even)
+{
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #4fc3dc44,
+  0 0 50px #ff2d75,
+  0 0 100px #ff2d75;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        translate: translateY (-010vh) scale(1);
+    }
+}
+.h4{
+    position: relative;
+}
